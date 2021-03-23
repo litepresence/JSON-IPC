@@ -91,7 +91,7 @@ def json_ipc(doc="", text="", initialize=False, append=False):
                         break
             except Exception:
                 if iteration == 1:
-                    if "initializing gateway main" in text:
+                    if "initializing" in text:
                         print("no json_ipc pipe found, initializing...")
                     else:
                         print(  # only if it happens more than once
